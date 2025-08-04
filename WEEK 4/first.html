@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form>
+        <label>username</label>
+        <input type="text" placeholder="username" id="user">
+        <label>password</label>
+        <input type="password" placeholder="password" id="pwd">
+        <button type="button" onclick="fun1()">submit</button>
+    </form>
+    <script>
+        function fun1()
+        {
+            var username=document.getElementById("user").value;
+            var password=document.getElementById("pwd").value;
+            if(!username){
+                alert("name must be filled");
+            }
+        return;
+          let  correctpwd="123";
+            if(password!=correctpwd){
+                alert("password is incorrect");
+
+            }
+            else{
+                alert("login is over");
+            }
+            
+        }
+    </script>
+</body>
+</html>
